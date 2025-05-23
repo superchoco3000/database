@@ -1,3 +1,51 @@
+Points importants :
+Assurez-vous que votre serveur local (XAMPP, WAMP, MAMP) est en cours d'exécution et que vous pouvez accéder à mon projet Air Jordan via cette URL dans votre navigateur.
+Absolument ! Voici un tutoriel pas à pas pour lancer Apache, MySQL et préparer l'environnement pour que n'importe qui puisse visualiser le site web Jordan (en supposant l'utilisation de XAMPP, qui est une solution tout-en-un facile à installer) :
+
+Tutoriel : Lancer Apache, MySQL avec XAMPP pour le site web Jordan
+
+Ce tutoriel vous guide à travers l'installation et le démarrage des services nécessaires pour faire fonctionner un site web PHP qui interagit avec une base de données MySQL, en utilisant XAMPP.
+
+Étape 1 : Télécharger et Installer XAMPP
+
+Ouvrez votre navigateur web et allez sur le site officiel d'Apache Friends : https://www.apachefriends.org/fr/index.html
+Téléchargez la version de XAMPP correspondant à votre système d'exploitation (Windows, Linux, macOS).
+Une fois le téléchargement terminé, exécutez le fichier d'installation.
+Suivez les instructions à l'écran. Vous pouvez généralement laisser les options par défaut. Assurez-vous que les cases pour Apache et MySQL sont cochées lors de la sélection des composants.
+Choisissez un dossier d'installation (par exemple, C:\xampp sous Windows).
+Terminez l'installation.
+Étape 2 : Démarrer Apache et MySQL
+
+Ouvrez le "XAMPP Control Panel". Vous pouvez le trouver en cherchant "XAMPP Control Panel" dans le menu de démarrage (Windows) ou dans le dossier d'installation de XAMPP.
+Dans le Control Panel, vous verrez une liste de modules (Apache, MySQL, etc.).
+Cliquez sur le bouton "Start" à côté d'Apache. Si tout se passe bien, la ligne d'Apache deviendra verte.
+Cliquez sur le bouton "Start" à côté de MySQL. Si tout se passe bien, la ligne de MySQL deviendra également verte.
+Si vous rencontrez des erreurs (par exemple, des problèmes de ports), vous devrez peut-être configurer les ports d'Apache ou MySQL en cliquant sur le bouton "Config" à côté du service concerné.
+
+Étape 3 : Placer les fichiers du site web Jordan
+
+Localisez le dossier htdocs à l'intérieur de votre dossier d'installation XAMPP (par exemple, C:\xampp\htdocs). C'est le répertoire racine pour vos sites web locaux.
+Créez un nouveau dossier à l'intérieur de htdocs pour votre projet Jordan. Par exemple, nommez-le jordan_viewer.
+Copiez tous les fichiers PHP de votre site web Jordan (ceux qui affichent les données de la base de données) dans ce dossier htdocs/jordan_viewer.
+Étape 4 : Importer la base de données Jordan (si nécessaire)
+
+Si votre projet Jordan utilise une base de données MySQL, vous devrez l'importer :
+
+Dans le XAMPP Control Panel, cliquez sur le bouton "Admin" à côté de MySQL. Cela ouvrira phpMyAdmin dans votre navigateur (généralement à l'adresse http://localhost/phpmyadmin/).
+Dans phpMyAdmin, cliquez sur "Bases de données" dans le menu du haut.
+Créez une nouvelle base de données (donnez-lui un nom, par exemple, jordan_db).
+Sélectionnez la base de données que vous venez de créer.
+Cliquez sur l'onglet "Importer".
+Cliquez sur "Choisir un fichier" et sélectionnez le fichier .sql contenant votre base de données Jordan (si vous en avez un).
+Cliquez sur "Exécuter" en bas de la page pour importer la base de données.
+Étape 5 : Accéder au site web Jordan
+
+Ouvrez votre navigateur web.
+Tapez l'URL suivante dans la barre d'adresse et appuyez sur Entrée :
+http://localhost/jordan_viewer/
+(Si le fichier principal de votre site web Jordan a un nom spécifique comme index.php ou accueil.php, vous devrez peut-être ajouter ce nom à l'URL, par exemple http://localhost/jordan_viewer/index.php).
+Si vous avez suivi ces étapes correctement et que votre site web Jordan est configuré pour se connecter à la base de données que vous avez importée, vous devriez maintenant pouvoir le visualiser dans votre navigateur.
+
 # database
 
 La base de données est composée de deux tables principales : 
